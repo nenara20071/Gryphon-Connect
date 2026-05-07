@@ -1,0 +1,31 @@
+{
+    "name": "Notification",
+    "type": "object",
+    "properties": {
+      "teacher_name": {
+        "type": "string",
+        "description": "Name of the teacher"
+      },
+      "teacher_email": {
+        "type": "string",
+        "description": "Email of the teacher"
+      },
+      "message": {
+        "type": "string",
+        "description": "Custom message from the teacher"
+      },
+      "location": {
+        "type": "string",
+        "description": "Where the teacher is currently available"
+      },
+      "is_active": {
+        "type": "boolean",
+        "default": true,
+        "description": "Whether the teacher is still available"
+      }
+    },
+    "required": [
+      "teacher_name",
+      "location"
+    ]
+  }
